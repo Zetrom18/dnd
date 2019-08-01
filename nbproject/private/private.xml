@@ -3,12 +3,13 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/home/lucas/personal/dnd/src/game/races/Race.java</file>
             <file>file:/home/lucas/personal/dnd/src/game/Entity.java</file>
-            <file>file:/home/lucas/personal/dnd/src/game/Person.java</file>
-            <file>file:/home/lucas/personal/dnd/src/game/User.java</file>
             <file>file:/home/lucas/personal/dnd/src/game/Session.java</file>
-            <file>file:/home/lucas/personal/dnd/src/game/Dice.java</file>
-            <file>file:/home/lucas/personal/dnd/src/game/Character.java</file>
+            <file>file:/home/lucas/personal/dnd/src/game/classes/Class.java</file>
+            <file>file:/home/lucas/personal/dnd/src/game/races/Dwarf.java</file>
+            <file>file:/home/lucas/personal/dnd/src/game/Monster.java</file>
+            <file>file:/home/lucas/personal/dnd/src/game/classes/Bard.java</file>
         </group>
     </open-files>
 </project-private>
