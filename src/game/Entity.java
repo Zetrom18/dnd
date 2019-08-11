@@ -18,8 +18,14 @@ public abstract class Entity {
     private int intelligence;
     private int wisdom;
     private int charisma;
+    private String name;
+    
+    Entity(){
+        
+    }
     
     Entity(
+            int maxHp,
             int str,
             int dex,
             int con,
@@ -27,7 +33,7 @@ public abstract class Entity {
             int wis,
             int cha
     ){
-        this.maximumHealthPoints = 1;
+        this.maximumHealthPoints = maxHp;
         this.healthPoints = maximumHealthPoints;
         this.strength = str;
         this.dexterity = dex;
@@ -37,10 +43,29 @@ public abstract class Entity {
         this.charisma = cha;
     }
     
-    private int getModifier(
+    public static int randomizeStat(){
+        int sum = 0;
+        int lowest = 7;     // 7 is now achivable from Dice.d6, therefore, will aways be higher
+        int roll;
+        for (int i=0; i<4; i++){
+            roll = Dice.d6(1);
+            sum += roll;
+            if (lowest > roll){
+                lowest = roll;
+            }
+        }
+        return sum - lowest;
+    }
+    
+    public int getModifier(
             int value
     ){
         return (value/2)-5;
+    }
+    
+    private void setMaxHp(int maxHp){
+        this.maximumHealthPoints = maxHp;
+        this.healthPoints = maximumHealthPoints;
     }
     
     public int rollStr(){

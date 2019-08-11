@@ -12,15 +12,15 @@ import java.util.ArrayList;
  * @author lucas
  */
 public class Session {
-    private Person master;
-    private ArrayList<Person> players;
+    private User master;
+    private ArrayList<User> players;
     
-    Session (Person mstr){
+    Session (User mstr){
         this.master = mstr;
-        this.players = new ArrayList<Person>();
+        this.players = new ArrayList<User>();
     }
     
-    public void addPlayer(Person player){
+    public void addPlayer(User player){
         this.players.add(player);
     }
 }

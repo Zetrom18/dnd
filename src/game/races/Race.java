@@ -16,7 +16,7 @@ public interface Race {
     String randomFemaleName();
     
     String randomLastName();
-    
+
     int speed();
     
     

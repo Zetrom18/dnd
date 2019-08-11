@@ -54,8 +54,29 @@ public abstract class Dwarf implements Race {
     public String randomFemaleName(){
         final ArrayList<String> list = new ArrayList<String>(
                 Arrays.asList(
-                        "",
-                        ""
+                        "Amber",
+                        "Artin",
+                        "Audhild",
+                        "Bardryn",
+                        "Dagnal",
+                        "Diesa",
+                        "Eldeth",
+                        "Falkrunn",
+                        "Finellen",
+                        "Gunnloda",
+                        "Gurdis",
+                        "Helja",
+                        "Hlin",
+                        "Kathra",
+                        "Kristryd",
+                        "Ilde",
+                        "Liftrasa",
+                        "Mardred",
+                        "Riswynn",
+                        "Sannl",
+                        "Torbera",
+                        "Torgga",
+                        "Vistra"
                 )
         );
         return list.get(new Random().nextInt(list.size()));
@@ -64,8 +85,21 @@ public abstract class Dwarf implements Race {
     public String randomLastName(){
         final ArrayList<String> list = new ArrayList<String>(
                 Arrays.asList(
-                        "",
-                        ""
+                        "Balderk",
+                        "Battlehammer",
+                        "Brawnanvil",
+                        "Dankil",
+                        "Fireforge",
+                        "Frostbeard",
+                        "Gorunn",
+                        "Holderhek",
+                        "Ironfist",
+                        "Loderr",
+                        "Lutgehr",
+                        "Rumnaheim",
+                        "Strakeln",
+                        "Torunn",
+                        "Ungart"
                 )
         );
         return list.get(new Random().nextInt(list.size()));

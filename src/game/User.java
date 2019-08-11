@@ -14,7 +14,7 @@ public class User {
     private int password;
     private String nickname;
     
-    User(
+    public User(
             String user,
             String pass,
             String nick
