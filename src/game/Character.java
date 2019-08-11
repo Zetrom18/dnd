@@ -9,10 +9,17 @@ package game;
  *
  * @author lucas
  */
-public class Character extends Person {
-    User player;
-    
-    Character(){
-        
+public class Character extends Entity {
+
+    Character(
+            int maxHp,
+            int str,
+            int dex,
+            int con,
+            int intl,
+            int wis,
+            int cha
+    ){
+        super(maxHp, str, dex, con, intl, wis, cha);
     }
 }
