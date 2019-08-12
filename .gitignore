@@ -3,3 +3,4 @@ pdfs*
 nbprojects*
 
 build.xml
+/build/
