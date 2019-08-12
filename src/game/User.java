@@ -14,19 +14,13 @@ public class User {
     private int password;
     private String nickname;
     
-    public User(
-            String user,
-            String pass,
-            String nick
-    ){
+    User(String user, String pass, String nick){
         this.username = user;
         this.password = pass.hashCode();
         this.nickname = nick;
     }
     
-    public boolean log(
-            String pass
-    ){
+    public boolean log(String pass){
         if(this.password == pass.hashCode()){
             return true;
         }
