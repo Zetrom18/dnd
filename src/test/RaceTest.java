@@ -9,6 +9,7 @@ import game.User;
 import game.Character;
 import game.classes.Bard;
 import game.races.Dwarf;
+import java.lang.reflect.*;
 
 /**
  *
@@ -16,14 +17,14 @@ import game.races.Dwarf;
  */
 public class RaceTest {
     
-    public static void RandomRaceTests(User usr) throws ClassNotFoundException{
-        System.out.println("Race test begin");
-        
-        Character charTest = new Character(usr, Class.forName("Dwarf"), Class.forName("Bard"));
-    }
-
-    public static void main(String[] args) {
-        final User usr = new User("test", "test", "tst");
-        RandomRaceTests(usr);
-    }
+//    public static void RandomRaceTests(User usr) throws ClassNotFoundException{
+//        System.out.println("Race test begin");
+//        
+//        Character charTest = new Character(usr, Class.forName("Dwarf"), Class.forName("Bard"));
+//    }
+//
+//    public static void main(String[] args) {
+//        final User usr = new User("test", "test", "tst");
+//        RandomRaceTests(usr);
+//    }
 }

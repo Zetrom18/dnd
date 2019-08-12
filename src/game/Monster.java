@@ -12,14 +12,14 @@ package game;
 public class Monster extends Entity {
     
 
-    Monster(
-            int str,
-            int dex,
-            int con,
-            int intl,
-            int wis,
-            int cha
-    ){
-        super(str, dex, con, intl, wis, cha);
-    }
+//    Monster(
+//            int str,
+//            int dex,
+//            int con,
+//            int intl,
+//            int wis,
+//            int cha
+//    ){
+//        super(str, dex, con, intl, wis, cha);
+//    }
 }
