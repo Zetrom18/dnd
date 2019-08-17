@@ -14,7 +14,7 @@ public class User {
     private int password;
     private String nickname;
     
-    User(String user, String pass, String nick){
+    public User(String user, String pass, String nick){
         this.username = user;
         this.password = pass.hashCode();
         this.nickname = nick;

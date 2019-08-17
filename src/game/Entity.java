@@ -43,9 +43,9 @@ public abstract class Entity {
         this.charisma = cha;
     }
     
-    public static int randomizeStat(){
+    public int randomizeStat(){
         int sum = 0;
-        int lowest = 7;     // 7 is now achivable from Dice.d6, therefore, will aways be higher
+        int lowest = 7;     // 7 is not achivable from Dice.d6, therefore, will aways be higher
         int roll;
         for (int i=0; i<4; i++){
             roll = Dice.d6(1);
@@ -63,7 +63,31 @@ public abstract class Entity {
         return (value/2)-5;
     }
     
-    private void setMaxHp(int maxHp){
+    private void setStr(int value){
+        this.strength = value;
+    }
+    
+    public void setDex(int value){
+        this.dexterity = value;
+    }
+    
+    public void setCon(int value){
+        this.constitution = value;
+    }
+    
+    public void setInt(int value){
+        this.intelligence = value;
+    }
+    
+    public void setWis(int value){
+        this.wisdom = value;
+    }
+    
+    public void setCha(int value){
+        this.charisma = value;
+    }
+    
+    public void setMaxHp(int maxHp){
         this.maximumHealthPoints = maxHp;
         this.healthPoints = maximumHealthPoints;
     }
